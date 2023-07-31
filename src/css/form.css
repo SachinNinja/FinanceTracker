@@ -1,0 +1,77 @@
+ body {
+      background-color: #08012a;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Add styling for the input element in form */
+    input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 5px 20px;
+      box-sizing: border-box;
+      background-color: #333;
+      border: none;
+      color: #fff;
+    }
+     /* Add hidden class to hide the element */
+    .hidden {
+      display: none;
+    }
+    /* Add show class to show the element */
+    .show {
+      display: block;
+    }
+    
+    /* Add styling for the button element in form */
+    button {
+      background-color: #1d0093;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 20px;
+      border: none;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+    }
+    
+    #submit{
+        background-color:green;
+    }
+
+    /* Add styling for the button element in form */
+    button:hover {
+      opacity: 0.8;
+    }
+
+    /* Add styling for the button element in form */
+    .account-info {
+      background-color: #222;
+      margin: 15px auto;
+      padding: 20px;
+      width: 70%;
+    }
+
+    /* Add styling for the button element in form */
+    .account-info_sub {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Add styling for the button element in form */
+    .account-info_sub input {
+      width: 45%;
+    }
+
+    /* Add hidden class to hide the element */
+    .hidden {
+      display: none;
+    }
+
+    /* Add show class to show the element */
+    .show {
+      display: block;
+    }
+
+   

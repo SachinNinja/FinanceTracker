@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/chatbot.css">
+    <title>The FinTracker</title>
+</head>
+<body>
+<!-- Home Page of Fintracker -->
+<!-- Navigation Bar -->
+<header class="header">
+      <a href="" class="logo">The FinTracker</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./addtransaction.html">Transactions</a></li>
+        <li><a href="./viewtransaction.html">Display Data</a></li>
+        <li><a href="./updttransaction.html">More Features</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+</header>
+<!-- Content of the home page -->
+<div class="container">
+    <h1>Fin<span class="tracker">Tracker</span></h1>
+    <div class="content">
+        <p>Track your expenses and manage your money better</p>
+        <button class="btn"><a href="login.html">Get Started</a></button>
+</div>
+<!-- Footer containing valid copyright information about the Fintracker website , it should be short -->
+<!-- <footer class="footer">
+    <div class="footer-bottom">
+        <p>All rights reserved by &copy;The FinTracker.2023</p>
+    </div>
+</footer> -->
+<span class="chat-window">
+        <!-- Creating header for chat-screen window -->
+        <span class="header1">
+            <span class="header-text">Chat-Bot</span>
+        </span>
+        <!-- Creating area to display messages -->
+        <span class="message">
+            <div class="message-container">
+                <span class="message-text">Hello</span>
+            </div>
+        </span>
+        <!-- Creating area to type text -->
+        <span class="msg">
+            <input type="text" placeholder="Type a message" class="msg-input">
+            <button class="send-btn" onclick="sendmsg()">Send</button>
+        </span>
+    </span>
+    
+    <!-- Make a button which will hide the chat-window if it is visible and make it visible if it is hiddes -->
+    <button onclick="changeVisiblityOfChatbot()" class="chat-icon">
+        <img src="https://img.icons8.com/ios-filled/50/000000/chat.png" class="chat-icon-img">
+</button>
+<script src="./src/js/chatbot.js"></script>
+<script src="./src/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+/* After making a layout in html for chat-screen window now designing it using css */
+/* Styling for chat-screen window */
+.chat-window {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #ccc;
+    display: none;
+    flex-direction: column;
+}
+
+/* Styling for header of chat-screen window */
+.header1 {
+    width: 100%;
+    height: 50px;
+    color: #ffffff;
+    background-color: #0b001a;
+    border-bottom: 2px solid #070029;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for header-text of chat-screen window */
+.header-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Styling for message area of chat-screen window */
+.message {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+/* Styling a message container block which will occupy whole width of message area and height of 20px */
+.message-container {
+    width: 100%;
+    height: 40px;
+}
+
+/* Styling for message-text of chat-screen window */
+.message-text {
+    display: block;
+    width: fit-content;
+    max-width: 80%;
+    padding: 10px;
+    background-color: #190153;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    font-size: 16px;
+    color: #ffffff;
+    float: left
+}
+/* Style a class name sent-message which will show the the message on right side of chat window which looks like a reply */
+.sent-message {
+    display: block;
+    width: fit-content;
+    max-width: 80%;
+    padding: 10px;
+    background-color: #dc0e03;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    font-size: 16px;
+    color: #ffffff;
+    float: right;
+}
+
+
+/* Styling for msg area of chat-screen window */
+.msg {
+    width: 100%;
+    height: 50px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ccc;
+    display: flex;
+    /* align-items: center; */
+    /* padding: 5px; */
+    /* justify-content: center; */
+}
+
+/* Giving margin to chat screen from bottom right edges */
+.chat-window {
+    margin-bottom: 20px;
+    margin-right: 70px;
+}
+
+/* Styling for msg-input of chat-screen window */
+.msg-input {
+    width: 60%;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-top: 10px;
+    padding: 0 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Styling for send-btn of chat-screen window */
+.send-btn {
+    width: 20%;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #024405;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 5%;
+    margin-top: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Styling for send-btn of chat-screen window when hover */
+.send-btn:hover {
+    background-color: #0fe300;
+}
+
+/* Styling for chat-icon */
+.chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Styling for chat-icon-img */
+.chat-icon-img {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+
+/* Styling for chat-icon when hover */
+.chat-icon:hover {
+    background-color: #ffffff;
+}
+
+/* Styling for chat-icon-img when hover */
+.chat-icon-img:hover {
+    color: #fff;
+}
+
+/* make chat-icon on the top of chat window when chat-window is visible  */
+.chat-icon.active {
+    z-index: 1;
+    display: none;
+}
+
+.chat-icon.active .chat-icon-img {
+    color: #fffefe;
+}
+
+.chat-icon.active:hover .chat-icon-img {
+    color: #333;
+}
+
+.chat-icon.active:hover {
+    background-color: #fff;
+}
+
+.chat-icon.active .chat-window {
+    display: flex;
+}
+
+.chat-window.active {
+    display: flex;
+    animation: slideIn 0.5s ease-in-out;
+    
+}
+
+.chat-window.active .chat-icon {
+    display: none;
+    margin-bottom: 80px;
+}
+
+/* Add animation while toggling the visiblity of chat-window */
+.chat-window {
+    animation: slideIn 0.001s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.chat-window {
+    animation: slideOut 0.001s ease-in-out;
+}
+
+/* Add reponsiveness to chat window such that it will occupy the whole width if the window width is less than 400px */
+@media (max-width: 380px) {
+    .chat-window {
+        width: 100%;
+        height: 40%;
+        margin: 0;
+        border-radius: 0;
+    }
+    .msg-input{
+        width: 50%;
+        font-size: 13px;    
+    }
+    .send-btn{
+        width: 15%;
+        font-size: 12px;
+    }
+
+    .chat-icon {
+        bottom: 2px;
+        right: 2px;
+    }
+}
+@media (max-width: 300px) {
+    .msg{
+        /* Align the item in it in a vertical column */
+        height: 80px;
+        flex-direction: column;
+    }
+    .msg-input{
+        width: 60%;
+        padding: 7px 10px;
+    }
+    .send-btn{
+        width: fit-content;
+        padding: 7px 10px;
+    }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/form.css">
+    <link rel="stylesheet" href="src/css/chatbot.css">
+    <title>Finance Tracker Form</title>
+  </head>
+  <script>
+
+  </script>
+  <body>
+    <!-- create a form top element having account number and account name -->
+    <form action="" method="post">
+      <!-- add accountNumber and accountName in a div having a heading account Information -->
+      <div class="account-info">
+        <!-- add a heading for this box -->
+        <h1>Account Information</h1><br><br>
+        <div class="account-info_sub">
+        <label for="accountNumber">Account Number</label>
+         <input type="text" name="accountNumber" id="accountNumber" required />
+        <label for="accountName">Account Name</label><br>
+        <input type="text" name="accountName" id="accountName" required />
+        </div>
+      </div>
+
+      <!-- create two button one to add expense and other to add income -->
+      <label for="accountName">Add Expense</label><br>
+      <button type="button" id="addExpense">Add Expense +</button>
+      <br>
+      <label for="accountName">Add Expense</label><br>
+      <button type="button" id="addIncome">Add Income +</button>
+
+      <!-- create a box having a big size text "Add Expense or Income" to switch between different boxes -->
+      <!-- <div id="addExpenseOrIncome" class="show">Add Expense or Income</div> -->
+
+      <!-- create a box having expense name expense ammount -->
+      <div id="expenseBox" class="hidden">
+        <label for="expenseName">Expense Name</label>
+        <input type="text" name="expenseName" id="expenseName" required />
+        <label for="expenseAmount">Expense Amount</label>
+        <input type="text" name="expenseAmount" id="expenseAmount" required />
+        <!-- add date and location input in this-->
+        <label for="expenseDate">Expense Date</label>
+        <input type="date" name="expenseDate" id="expenseDate" required />
+        <label for="expenseLocation">Expense Location</label>
+        <input
+          type="text"
+          name="expenseLocation"
+          id="expenseLocation"
+          required
+        />
+        <!-- add a add tag button which will add the entered tags in the box -->
+        <input type="text" id="addTagInput" value="Add Tag" />
+        <button type="button" id="addTagButton">Add Tag</button>
+        <!-- add a tag box which will show the tags added -->
+        <div id="tagContainer"></div>
+        <!-- add a description box where we will input the any description related to the expense -->
+        <label for="expenseDescription">Expense Description</label>
+        <input
+          type="text"
+          name="expenseDescription"
+          id="expenseDescription"
+          required
+        />
+      </div>
+
+      <!-- create a box having income name income amount -->
+      <div id="incomeBox" class="hidden">
+        <label for="incomeName">Income Name</label>
+        <input type="text" name="incomeName" id="incomeName" required />
+        <label for="incomeAmount">Income Amount</label>
+        <input type="text" name="incomeAmount" id="incomeAmount" required />
+        <!-- add date and location input in this-->
+        <label for="incomeDate">Income Date</label>
+        <input type="date" name="incomeDate" id="incomeDate" required />
+        <label for="incomeLocation">Income Location</label>
+        <input type="text" name="incomeLocation" id="incomeLocation" required />
+        <!-- add a add tag button which will add the entered tags in the box -->
+        <input type="text" id="addTagInput" value="Add Tag" />
+        <button type="button" id="addTagButton">Add Tag</button>
+        <!-- add a tag box which will show the tags added -->
+        <div id="tagContainer"></div>
+        <!-- add a description box where we will input the any description related to the income -->
+        <label for="incomeDescription">Income Description</label>
+        <input
+          type="text"
+          name="incomeDescription"
+          id="incomeDescription"
+          required
+        />
+      </div>
+      <br>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+
+
+
+    <!-- Make a layout in html for chat-screen window -->
+    <span class="chat-window">
+      <!-- Creating header for chat-screen window -->
+      <span class="header">
+          <span class="header-text">Chat-Bot</span>
+      </span>
+      <!-- Creating area to display messages -->
+      <span class="message">
+          <div class="message-container">
+              <span class="message-text">Hello</span>
+          </div>
+      </span>
+      <!-- Creating area to type text -->
+      <span class="msg">
+          <input type="text" placeholder="Type a message" class="msg-input">
+          <button class="send-btn" onclick="sendmsg()">Send</button>
+      </span>
+  </span>
+  
+  <!-- Make a button which will hide the chat-window if it is visible and make it visible if it is hiddes -->
+  <button onclick="changeVisiblityOfChatbot()" class="chat-icon">
+      <img src="https://img.icons8.com/ios-filled/50/000000/chat.png" class="chat-icon-img">
+  </button>
+
+
+
+    <!-- JS script file -->
+    <script src="src/js/form.js"></script>
+    <script src="src/js/chatbot.js"></script>
+  </body>
+</html>

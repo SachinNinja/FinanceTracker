@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions</title>
+</head>
+<body>
+    <!-- Create a form that for finance transaction for expense and income record-->
+    <form action="form2.php" method="post">
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date" required><br><br>
+        <label for="amount">Amount:</label>
+        <input type="number" name="amount" id="amount" required><br><br>
+        <label for="category">Category:</label>
+        <select name="category" id="category" required>
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select><br><br>
+        <label for="description">Description:</label>
+        <input type="text" name="description" id="description" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+
+</html>

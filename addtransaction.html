@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Transaction</title>
+    <link rel="stylesheet" href="src/css/innertransactions.css">
+  </head>
+  <body>
+    <header class="header">
+      <a href="" class="logo">The FinTracker</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./addtransaction.html">Transactions</a></li>
+        <li><a href="./viewtransaction.html">Display Data</a></li>
+        <li><a href="./updttransaction.html">More Features</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+</header>
+    <div class="container2">
+      <!-- Add a interactive form -->
+      <form action="addtransaction.php" method="post">
+        <!-- Add a heading -->
+        <h1>Add Income</h1>
+        <!-- Add a input field for the date -->
+        <input type="date" name="date" id="date" placeholder="Date" required />
+        <!-- Add a input field for the amount -->
+        <input
+          type="number"
+          name="amount"
+          id="amount"
+          placeholder="Amount"
+          required
+        />
+        <!-- Add a input field for the category -->
+        <input
+          type="text"
+          name="category"
+          id="category"
+          placeholder="Category"
+          required
+        />
+        <!-- Add a input field for the description -->
+        <input
+          type="text"
+          name="description"
+          id="description"
+          placeholder="Description"
+          required
+        />
+        <!-- Add a submit button -->
+        <input type="submit" value="Add Transaction" />
+      </form>
+    </div>
+
+    <div class="container">
+        <!-- Add a interactive form -->
+        <form action="addtransaction.php" method="post">
+          <!-- Add a heading -->
+          <h1>Add Expense</h1>
+          <!-- Add a input field for the date -->
+          <input type="date" name="date" id="date" placeholder="Date" required />
+          <!-- Add a input field for the amount -->
+          <input
+            type="number"
+            name="amount"
+            id="amount"
+            placeholder="Amount"
+            required
+          />
+          <!-- Add a input field for the category -->
+          <input
+            type="text"
+            name="category"
+            id="category"
+            placeholder="Category"
+            required
+          />
+          <!-- Add a input field for the description -->
+          <input
+            type="text"
+            name="description"
+            id="description"
+            placeholder="Description"
+            required
+          />
+          <!-- Add a submit button -->
+          <input type="submit" value="Add Transaction" />
+        </form>
+      </div>
+    
+    <!-- Add one more box which is designed to display the history of transaction -->
+    
+
+
+  </body>
+</html>

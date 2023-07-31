@@ -1,0 +1,270 @@
+/* Add styling to the form */
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  
+}
+body {
+  background: rgb(2, 12, 41);
+}
+
+/* Navbar start */
+.header {
+  background-color: rgb(1, 0, 73);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100vw;
+  z-index: 3;
+  font-size: 2vh;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  text-align:center;
+  background-color: rgb(0, 0, 0);;
+}
+
+.header li a {
+  display: block;
+  padding: 10px 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-right: 1px solid #f4f4f4;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-decoration: none;
+}
+.header li a:hover{
+  color:rgb(48, 48, 251);
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  color: white;
+  text-shadow: 4px black;
+  font-size: 2em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 1vh 20px;
+  text-decoration: none;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #fffefe;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #ffffff;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 300px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+
+/* Add stylin to the container box which contain form */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  width: 45vw;
+  background-color: #2d6f74;
+  background-image: url("https://th.bing.com/th/id/OIP.4CZVgmCU40qYjbsm1yPozQHaPP?pid=ImgDet&rs=1");
+  background-size: cover;
+  /* Darken background Code */
+  background-blend-mode: multiply;
+  background-position: center;
+  /* Alignt the box to the right middle of screen */
+  position: absolute;
+  top: 50%;
+  left:65%;
+  transform: translate(-30%, -50%);
+  /* Add round edges */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #000000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  width: 400px;
+  background-size: cover;
+  /* Darken background Code */
+  background-blend-mode: multiply;
+  background-position: center;
+}
+/* Add styling to the heading */
+h1 {
+  color: #d1d4d7;
+  font-size: 4vh;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0 5px 50px 5px;
+  font-weight: bold;
+  /* Align it to center */
+  text-align: center;
+}
+/* Add styling to the input fields */
+input {
+  margin: 10px;
+  padding: 10px;
+  width: 40vw;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(58, 107, 121);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* Change color of placeholder */
+::placeholder {
+  color: rgb(193, 189, 189);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Add styling to the submit button */
+input[type="submit"] {
+  background-color: #022328;
+  /* background-color: #062b51; */
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Add styling for the container2 whcih is displaying the history of transactions */
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  width: 45vw;
+  background-color: #2d6f74;
+  background-image: url("https://th.bing.com/th/id/OIP.4CZVgmCU40qYjbsm1yPozQHaPP?pid=ImgDet&rs=1");
+  background-size: cover;
+  /* Darken background Code */
+  background-blend-mode: multiply;
+  background-position: center;
+  /* Alignt the box to the right middle of screen */
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-70%, -50%);
+  /* Add round edges */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #000000;
+}
+/* Add styling to the table */
+table {
+  border-collapse: collapse;
+  width: 80%;
+  color: #d1d4d7;
+  padding: 2px;
+  font-size: 2vw;
+  text-align: left;
+}
+/* Separate columns of table via border */
+th {
+  border: 1px solid #d1d4d7;
+  padding: 2px;
+}
+
+/* Add styling to the table rows */
+th {
+  background-color: #03313f;
+  color: white;
+  padding: 3px;
+}
+/* Separate column of rows via border */
+td {
+  border: 1px solid #d1d4d7;
+  padding: 2px;
+  /* Align content in center */
+  text-align: center;
+}
+
+/* Add styling to the table data */
+tr:nth-child(even) {
+  background-color: #2d6f74;
+}
+
+.image img{
+/* Add CSS for image class in viewtransaction */
+ /* Place image in right hand side of screen */
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+    /* Increase Size of Image  */
+  width: 60vw;
+  height: 50vw;
+  /* Darken the image */
+  background-blend-mode: multiply;
+  
+
+}

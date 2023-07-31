@@ -1,0 +1,99 @@
+/*  CSS for this code  */
+
+/* Body */
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #000a2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.form-container{
+    color: black;
+    width: 30%;
+    height: 70vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.form-container form{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-container form h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.form-container form input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(151, 151, 151);
+    padding-left: 10px;
+    font-size: 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.form-container form button{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-size: 20px;
+    background-color: #04012a;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.form-container form button:hover{
+    background-color: rgb(0, 85, 145);
+}
+
+.form-container form .toggle-form{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.form-container form .toggle-form button{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 15px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.form-container form .toggle-form button:hover{
+    color: rgb(0, 43, 71);
+}
+
+.form-container form h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+  

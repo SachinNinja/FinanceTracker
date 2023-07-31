@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login and Signup Form</title>
+    <link rel="stylesheet" href="./src/css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form id="loginForm">
+                <h2>Login</h2>
+                <input type="text" placeholder="Email" name="email" required>
+                <input type="text" placeholder="Password" name="password" required>
+                <button type="submit">Login</button>
+                <p class="toggle-form">Don't have an account?</p><button onclick="toggleForm()">Signup</button>
+            </form>
+            <form id="signupForm" style="display: none;">
+                <h2>SignUp</h2>
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="text" placeholder="Email" name="email" required>
+                <input type="text" placeholder="Password" name="password" required>
+                <button type="submit">Signup</button>
+                <p class="toggle-form">Already have an account?</p><button onclick="toggleForm()">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function toggleForm() {
+            var loginForm = document.getElementById("loginForm");
+            var signupForm = document.getElementById("signupForm");
+
+            if (loginForm.style.display === "none") {
+                loginForm.style.display = "block";
+                signupForm.style.display = "none";
+            } else {
+                loginForm.style.display = "none";
+                signupForm.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

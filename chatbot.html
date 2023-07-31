@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat-Bot</title>
+    <link rel="stylesheet" href="src/css/chatbot.css">
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+    <script src="src/js/chatbot.js"></script>
+    
+</head>
+<body>
+    <!-- Make a layout in html for chat-screen window -->
+    <span class="chat-window">
+        <!-- Creating header for chat-screen window -->
+        <span class="header1">
+            <span class="header-text">Chat-Bot</span>
+        </span>
+        <!-- Creating area to display messages -->
+        <span class="message">
+            <div class="message-container">
+                <span class="message-text">Hello</span>
+            </div>
+        </span>
+        <!-- Creating area to type text -->
+        <span class="msg">
+            <input type="text" placeholder="Type a message" class="msg-input">
+            <button class="send-btn" onclick="sendmsg()">Send</button>
+        </span>
+    </span>
+    
+    <!-- Make a button which will hide the chat-window if it is visible and make it visible if it is hiddes -->
+    <button onclick="changeVisiblityOfChatbot()" class="chat-icon">
+        <img src="https://img.icons8.com/ios-filled/50/000000/chat.png" class="chat-icon-img">
+    </button>
+</body>
+</html>
