@@ -1,7 +1,5 @@
 # Finance Tracking Website
 
-![Finance Tracking Website]
-
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
