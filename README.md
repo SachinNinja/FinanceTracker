@@ -4,7 +4,6 @@
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
@@ -29,22 +28,10 @@ The Finance Tracking Website is a web application designed to help users manage 
 
 - Frontend:
   - HTML, CSS, JavaScript
-  - React.js (or Angular/Vue.js)
-  - Charting Libraries (e.g., Chart.js, D3.js)
 
 - Backend:
-  - Node.js (Express.js) or Python (Django/Flask)
-  - Database (e.g., MySQL, PostgreSQL, MongoDB)
-
-- Authentication:
-  - JWT (JSON Web Tokens) for secure authentication and authorization.
-
-## Installation
-
-1. Clone the repository: `git clone https://github.com/yourusername/finance-tracking-website.git`
-2. Install dependencies:
-   - Frontend: `cd frontend && npm install`
-   - Backend: `cd backend && npm install`
+  - Node.js 
+  - Database ( MongoDB )
 
 ## Usage
 
